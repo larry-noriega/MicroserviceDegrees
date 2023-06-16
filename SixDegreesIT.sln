@@ -5,15 +5,15 @@ VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "angularapp", "angularapp\angularapp.esproj", "{EB1414D8-474E-46A7-BFA2-14811DD6A270}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "webapi", "webapi\webapi.csproj", "{1BC61BC3-5688-461A-984C-BE9C26A22EA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SixDegreesIT.WebAPI", "SixDegreesIT.WebAPI\SixDegreesIT.WebAPI.csproj", "{1BC61BC3-5688-461A-984C-BE9C26A22EA9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C67A7A7C-CAAD-4ED9-9472-7024FA4F6596}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixDegreesIT.Core", "SixDegreesIT.Core\SixDegreesIT.Core.csproj", "{5E7CE0BA-8833-4D37-A1C4-CC0266F3E8BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SixDegreesIT.Core", "SixDegreesIT.Core\SixDegreesIT.Core.csproj", "{5E7CE0BA-8833-4D37-A1C4-CC0266F3E8BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixDegreesIT.Infrastructure", "SixDegreesIT.Infrastructure\SixDegreesIT.Infrastructure.csproj", "{5C13C103-C214-4AA3-832B-B15E4B1875D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SixDegreesIT.Infrastructure", "SixDegreesIT.Infrastructure\SixDegreesIT.Infrastructure.csproj", "{5C13C103-C214-4AA3-832B-B15E4B1875D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixDegreesIT.Domain", "SixDegreesIT.Domain\SixDegreesIT.Domain.csproj", "{2566F9A7-A2FA-4E8E-B1E7-08E25010BBF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SixDegreesIT.Domain", "SixDegreesIT.Domain\SixDegreesIT.Domain.csproj", "{2566F9A7-A2FA-4E8E-B1E7-08E25010BBF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

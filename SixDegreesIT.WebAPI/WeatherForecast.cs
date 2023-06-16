@@ -1,4 +1,4 @@
-namespace webapi;
+namespace SixDegreesIT.WebAPI;
 
 public class WeatherForecast
 {
