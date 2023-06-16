@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "angularapp", "angularapp\angularapp.esproj", "{EB1414D8-474E-46A7-BFA2-14811DD6A270}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "SixDegreesIT.AngularTS", "SixDegreesIT.AngularTS\SixDegreesIT.AngularTS.esproj", "{EB1414D8-474E-46A7-BFA2-14811DD6A270}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SixDegreesIT.WebAPI", "SixDegreesIT.WebAPI\SixDegreesIT.WebAPI.csproj", "{1BC61BC3-5688-461A-984C-BE9C26A22EA9}"
 EndProject
