@@ -7,7 +7,7 @@ using SixDegreesIT.Infrastructure.Repository;
 
 namespace SixDegreesIT.WebAPI.Controllers
 {
-    [Route("Persons")]
+    [Route("api/persons")]
     [ApiController]
     public class PersonController : Controller
     {
