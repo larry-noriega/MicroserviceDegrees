@@ -1,0 +1,19 @@
+<p>list-persons works!</p>
+
+
+<table *ngIf="persons">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Surname</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of persons">
+      <td>{{ person.id }}</td>
+      <td>{{ person.name }}</td>
+      <td>{{ person.surName }}</td>
+    </tr>
+  </tbody>
+</table>
