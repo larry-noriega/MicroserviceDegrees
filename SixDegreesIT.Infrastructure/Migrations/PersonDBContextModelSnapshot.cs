@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SixDegreesIT.Infrastructure.Data;
 
@@ -10,12 +9,10 @@ using SixDegreesIT.Infrastructure.Data;
 
 namespace SixDegreesIT.Infrastructure.Migrations
 {
-    [DbContext(typeof(PruebaSDDBContext))]
-    [Migration("20230617050756_Initial-Migration")]
-    partial class InitialMigration
+    [DbContext(typeof(PersonDBContext))]
+    partial class PersonDBContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,7 +21,7 @@ namespace SixDegreesIT.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("SixDegreesIT.Core.PruebasSD", b =>
+            modelBuilder.Entity("SixDegreesIT.Core.Person", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -40,7 +37,7 @@ namespace SixDegreesIT.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PruebasSDs");
+                    b.ToTable("PruebasSD", (string)null);
                 });
 #pragma warning restore 612, 618
         }

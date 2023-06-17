@@ -1,6 +1,6 @@
 ﻿namespace SixDegreesIT.Core
 {
-    public class PruebasSD : EntityBase
+    public class Person : EntityBase
     {
         public string? Name { get; set; }
 
