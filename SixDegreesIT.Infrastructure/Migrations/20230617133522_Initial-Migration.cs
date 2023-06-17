@@ -11,7 +11,7 @@ namespace SixDegreesIT.Infrastructure.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "PruebasSDs",
+                name: "PruebasSD",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -21,7 +21,7 @@ namespace SixDegreesIT.Infrastructure.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PruebasSDs", x => x.Id);
+                    table.PrimaryKey("PK_PruebasSD", x => x.Id);
                 });
         }
 
@@ -29,7 +29,7 @@ namespace SixDegreesIT.Infrastructure.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "PruebasSDs");
+                name: "PruebasSD");
         }
     }
 }

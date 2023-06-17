@@ -5,38 +5,38 @@ namespace SixDegreesIT.Infrastructure.Data
 
     public static class SeedData
     {
-        public static void Initialize(PruebaSDDBContext db)
+        public static void Initialize(PersonDBContext db)
         {
-            PruebasSD[] data = new[]
+            Person[] data = new[]
             {
-                new PruebasSD()
+                new Person()
                 {
                     Name = "Archibald",
                     SurName = "Beaker"
                 },
-                new PruebasSD()
+                new Person()
                 {                   
                     Name = "Yasmin",
                     SurName = "Cotton"
                 },
-                new PruebasSD()
+                new Person()
                 {
                     Name = "Luke",
                     SurName = "Peterson"
                 },
-                new PruebasSD()
+                new Person()
                 {
                     Name = "Farrago",
                     SurName = "Rivers"
                 },
-                new PruebasSD()
+                new Person()
                 {
                     Name = "Marcie",
                     SurName = "Savage"
                 }
             };
 
-            db.PruebasSDs.AddRange(data);
+            db.Persons.AddRange(data);
 
             db.SaveChanges();
         }

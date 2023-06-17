@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using SixDegreesIT.Core.SQL;
 using SixDegreesIT.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,10 +14,10 @@ builder.Services.AddSwaggerGen();
 //Get Connection String
 var connectionString = builder.Configuration.GetConnectionString("default");
 
-builder.Services.AddSqlServer<PruebaSDDBContext>(connectionString);
+builder.Services.AddDbContext<PersonDBContext>();
 
 // Set up Database
-//builder.Services.Configure<SQLSettings>(options => { options.ConnectionString = connectionString; });
+builder.Services.Configure<SQLSettings>(options => { options.ConnectionString = connectionString; });
 
 var app = builder.Build();
 
@@ -37,7 +38,7 @@ app.MapControllers();
 var scopeFactory = app.Services.GetRequiredService<IServiceScopeFactory>();
 using (var scope = scopeFactory.CreateScope())
 {
-    var db = scope.ServiceProvider.GetRequiredService<PruebaSDDBContext>();
+    var db = scope.ServiceProvider.GetRequiredService<PersonDBContext>();
 
     db.Database.EnsureDeleted();
     db.Database.Migrate();
