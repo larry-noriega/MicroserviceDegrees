@@ -1,7 +1,10 @@
-<p>list-persons works!</p>
+<button (click)="getListPersons()" class="btn btn-danger float-end">Buscar</button>
 
+<p *ngIf="persons.length === 0">
+  <em>Please click the button to fetch data.</em>
+</p>
 
-<table *ngIf="persons">
+<table *ngIf="persons.length > 0">
   <thead>
     <tr>
       <th>ID</th>
