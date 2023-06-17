@@ -1,22 +1,43 @@
-<button (click)="getListPersons()" class="btn btn-danger float-end">Buscar</button>
+<div class="row mt-3">
 
-<p *ngIf="persons.length === 0">
-  <em>Please click the button to fetch data.</em>
-</p>
+  <div class="col-lg-8 mb-3">
+    <p *ngIf="persons.length === 0" class="lead">Please click the button to fetch data.</p>
+    <p *ngIf="persons.length > 0" class="lead">Well... we had fetch {{persons.length.toString()}} recors.</p>
+  </div>
+  <div class="col-lg-4">
+    <button style="width: 100%;" (click)="getListPersons()" class="btn btn-success float-left">Buscar</button>
+  </div>
 
-<table *ngIf="persons.length > 0">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Surname</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let person of persons">
-      <td>{{ person.id }}</td>
-      <td>{{ person.name }}</td>
-      <td>{{ person.surName }}</td>
-    </tr>
-  </tbody>
-</table>
+  <figure *ngIf="persons.length === 0" class="text-center align-middle mt-5">
+    <blockquote class="blockquote">
+      <p>Vestibulum eu. Donec in eros eu libero tempor gravida. </p>
+    </blockquote>
+    <figcaption class="blockquote-footer mt-1">
+      Waiting for your <mark>click</mark> ⬆
+    </figcaption>
+  </figure>
+
+  <table *ngIf="persons.length > 0" class="table table-bordered mt-3 table-hover">
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Surname</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let person of persons">
+        <td style="width: 10%;">{{ person.id }}</td>
+        <td style="width: 35%;">{{ person.name }}</td>
+        <td style="width: 35%;">{{ person.surName }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="persons.length > 0" class="row mt-1">
+    <p><small><mark>That's it.</mark></small></p>
+  </div>
+
+</div>
